@@ -16,6 +16,7 @@ body{
     height: 80px;
     position: fixed;
     top: 0;left: 0;
+    z-index: 3;
 }
 .container{
     width: 90%;
@@ -31,8 +32,12 @@ body{
     font-size: 25px;
     cursor: pointer;
 }
+
 .logo h1 a{
     text-decoration: none;
+
+.logo h1{
+
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 22px;
