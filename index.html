@@ -1,82 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./Styles/styles.css">
-    <title>Huellitas saludables</title>
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="shortcut icon" href="./images/index/imaguenes/favicon.jpeg" type="images/index/imaguenes/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="../images/index/imaguenes/favicon.jpeg">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <title>Huellitas Saludables</title>
 </head>
+
 <body>
-                                     <!--CATEGORIAS -->
-    <nav id="menu-navegacion catego">
-        <ul class="menu flex">
-            <li> <a href="./index.html"><i class="far fa-paw-alt"></i>Categorias<i class="far fa-paw-alt"></i></a> </li>
-        </ul>
-    </nav>
-    <br>
-    <br>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1><a href="./index.html">Huellitas S. 🐾</a></h1>
+            </div>
+            <nav class="menu">
+                <a href="./index.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Contacto</a>
 
-    <div class="container">
-        <div class="cards">
-            <!--DOG INICIO-->
-            <img src="./image/perro.png" alt="imagen perro" width="200px" height="200px">
-            <h3>Perro</h3>
-            <ul>
-                <li>Snacks</li>
-                <li>Ropa</li>
-            </ul>
-            <br>
-                <button class="boton"><li><a href="./pages/dog.html">Ver más</li></a></button>
+            </nav>
         </div>
-        <!--FINAL-->
+    </header>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <section>
+                    <form autocomplete="off">
+                        <div>
+                            <input type="text" name="q" placeholder="Buscar">
+                        </div>
+                    </form>
+                </section>
+                <a href="#">Novedades</a>
 
-        <!--CAT INICIO-->
-        <div class="cards">
-            <img src="./image/gato.jpeg" alt=" imagen gato" width="200px" height="200px">
-            <h3>Gato</h3>
-            <ul>
-                <li>Snacks</li>
-                <li>Ropa</li>
-            </ul>
-            <br>
-            
-            <button class="boton"><li><a href="./pages/cat.html">Ver más</li></a></button>
-        </div>
-        <!--FINAL-->
+                <a href="#">Categorias</a> 
+                <a href="./pages/marcas.html">Marcas</a> 
 
-        <!--RABBIT INICIO-->
-        <div class="cards">
-            <img src="./image/conejo.jpg" alt="imagen conejo" width="200px" height="200px">
-            <h3>Conejo</h3>
-            <ul>
-                <li>Snacks</li>
-                <li>Ropa</li>
-            </ul>
-            <br>    
-            <button class="boton"><li><a href="./pages/rabbit.html">Ver mas</a></li></button>
-        </div>
-        <!--FINAL-->
 
-        <!--BIRD INICIO-->
-        <div class="cards">
-            <img src="./image/ave.jpg" alt="imagen ave" width="200px" height="200px">
-            <h3>Ave</h3>
-            <ul>
-            </br>
-                <li>Snacks</li>
-            <br>
-            <button class="boton"><li><a href="./pages/bird.html">Ver mas</a></li></button>
+            </nav>
+            <label for="btn-menu">✖️</label>
         </div>
-        <!--FINAL-->
+    </div><br>
 
-        <!--ACCESORIOS-->
-        <header class="accesorios">
-            <h1>Diversión</h1>
-            <p>Encuentra juguetes y accesorios para tus mascotas</p>
-            <button class="btn"><li><a href="./pages/Juguetes.html">Leer mas</a></li></button>
-        </header>
+    <div><br>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="carousel-item">
+                    <img src="./images/index/imagenes/publicidadCarusel2.jpeg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="./images/index/imagenes/publicidadCarusel3.jpeg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="./images/index/imagenes/publicidadCarusel2.jpeg">
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
         </div>
+    </div><br>
+    <div class="icons">
+        <div>
+            <div>
+                <i class="fas fa-clock reloj"></i>
+            </div>
+            <h2>Entregas en un dia</h2>
+        </div>
+        <div>
+            <div>
+                <i class="far fa-credit-card trajeta-credito"></i>
+            </div>
+            <h2>Medios de pagos</h2>
+        </div>
+        <div>
+            <div>
+                <i class="fas fa-truck carrito"></i>
+            </div>
+            <h2>Envios a domicilio</h2>
+        </div>
+    </div>
+    
 </body>
+
 </html>
