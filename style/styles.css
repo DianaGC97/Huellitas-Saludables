@@ -31,7 +31,8 @@ body{
     font-size: 25px;
     cursor: pointer;
 }
-.logo h1{
+.logo h1 a{
+    text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 22px;
@@ -180,7 +181,7 @@ form input:focus {
 .carousel-item img {
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 .carousel-control {
