@@ -1,0 +1,3 @@
+Aqui se registran las actualizaciones mas importantes
+
+act 1: Se agrego el carrito de compras a la pagina de marcas
