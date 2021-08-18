@@ -21,9 +21,15 @@ body{
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
+
+.container-nav .logo-btn{
+    display: flex;
+}
+
 .container-nav .btn-menu, .logo{
-    float: left;
     line-height: 70px;
 }
 .container-nav .btn-menu label{
@@ -38,11 +44,16 @@ body{
     font-size: 22px;
     margin-left: 10px;
 }
-.container-nav .menu{
-    float: right;
-    line-height: 100px;
+
+.container-nav .nav-carrito{
+    display: flex;
 }
-.container-nav .menu a{
+.container-nav .menu{
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+}
+.container-nav .menu a, span{
     display: inline-block;
     padding: 15px;
     line-height: normal;
@@ -84,7 +95,7 @@ body{
     background: #31b183 ;
     border-right: #eeeeee solid;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     transition: all 600ms ease;
     transform: translateX(-100%);
 
@@ -201,7 +212,6 @@ form input:focus {
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
- 
 }
 
 .carousel-control.prev {
@@ -288,4 +298,102 @@ form input:focus {
 }
 .flex{
     display: flex;
+}
+
+/*============ ESTILO CARRITO =============*/
+.carrito-ul{
+    list-style: none;
+}
+#img-carrito{
+    cursor: pointer;
+    font-size: 30px;
+}
+.carrito{
+    display: none;
+}
+
+
+.carrito a, #lista-carrito td a{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.carrito a:hover{
+    background-color: rgb(255, 88, 88);
+}
+.activo{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    min-height: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 3px rgb(0 0 0 / 20%);
+    overflow: scroll;
+    width: 100%;
+    height: 95%;
+    position: fixed;
+    z-index: 3;
+    margin-top: 40px;
+}
+
+.activo{
+    user-select: none;
+}
+
+.vaciar-total{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vaciar-total a{
+    width: 100%;
+}
+
+.vaciar-total .total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vaciar-total .total .suma-total{
+    margin-left: 20px;
+}
+
+#lista-carrito {
+    font-size: 20px;
+    color: #31B189;
+}
+
+
+#lista-carrito th{
+    min-width: 30px;
+}
+
+
+#lista-carrito td{
+    font-size: 20px;
+    text-align: center;
+    min-width: 30px;
+    color: black;
+}
+
+#lista-carrito td a:hover{
+    background-color: rgb(255, 80, 80);
+}
+
+/*=================== RESPONSIVE ========================*/
+@media screen and (max-width: 425px){
+    .menu.no-ver{
+        display: none;
+    }
+    #lista-carrito tr .no-ver{
+        display: none;
+    }
 }

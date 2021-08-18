@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../styles/categorias.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
     <title>Huellitas saludables categorias </title>
 </head>
+
 <body>
     <header class="header">
         <div class="container-nav">
-            <div class="btn-menu">
-                <label for="btn-menu">☰</label>
+            <div class="logo-btn">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1><a href="../index.html">Huellitas S. 🐾</a></h1>
+                </div>
             </div>
-            <div class="logo">
-                <h1><a href="../index.html">Huellitas S. 🐾</a></h1>
-            </div>
-            <nav class="menu">
-                <a href="../index.html">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
 
-            </nav>
+            <div class="nav-carrito">
+                <nav class="menu no-ver">
+                    <a href="../index.html">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contacto</a>
+                </nav>
+    
+                <div class="compra">
+                    <ul class="carrito-ul"> 
+                        <li class="sub-menu">
+                            <span class="icon-cart" id="img-carrito"></span>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <input type="checkbox" id="btn-menu">
@@ -48,7 +65,31 @@
         </div>
     </div><br>
 
-                                     <!--CATEGORIAS -->
+    <div class="carrito" id="carrito">
+        <table id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th class="no-ver">Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div class="vaciar-total">
+            <div class="total">
+                <h2>Total:</h2>
+                <h3 class="suma-total"></h3>
+            </div>
+            <a href="#" id="vaciar-carrito">Vaciar</a>
+        </div>
+    </div>
+
+    <!--CATEGORIAS -->
     <nav id="menu-navegacion catego">
         <ul class="menu flex">
             <li> <a href="./index.html"><i class="far fa-paw-alt"></i>Categorias<i class="far fa-paw-alt"></i></a> </li>
@@ -67,7 +108,9 @@
                 <li>Ropa</li>
             </ul>
             <br>
-                <button class="boton"><li><a href="../pages/catego-pages/dog.html">Ver más</li></a></button>
+            <button class="boton">
+                <li><a href="../pages/catego-pages/dog.html">Ver más</li></a>
+            </button>
         </div>
         <!--FINAL-->
 
@@ -80,8 +123,10 @@
                 <li>Ropa</li>
             </ul>
             <br>
-            
-            <button class="boton"><li><a href="../pages/catego-pages/cat.html">Ver más</li></a></button>
+
+            <button class="boton">
+                <li><a href="../pages/catego-pages/cat.html">Ver más</li></a>
+            </button>
         </div>
         <!--FINAL-->
 
@@ -93,8 +138,10 @@
                 <li>Snacks</li>
                 <li>Ropa</li>
             </ul>
-            <br>    
-            <button class="boton"><li><a href="../pages/catego-pages/rabbit.html">Ver mas</a></li></button>
+            <br>
+            <button class="boton">
+                <li><a href="../pages/catego-pages/rabbit.html">Ver mas</a></li>
+            </button>
         </div>
         <!--FINAL-->
 
@@ -103,10 +150,12 @@
             <img src="../images/catego-images/ave.jpg" alt="imagen ave" width="200px" height="200px">
             <h3>Ave</h3>
             <ul>
-            </br>
+                </br>
                 <li>Snacks</li>
-            <br>
-            <button class="boton"><li><a href="../pages/catego-pages/bird.html">Ver mas</a></li></button>
+                <br>
+                <button class="boton">
+                    <li><a href="../pages/catego-pages/bird.html">Ver mas</a></li>
+                </button>
         </div>
         <!--FINAL-->
 
@@ -114,8 +163,12 @@
         <header class="accesorios">
             <h1>Diversión</h1>
             <p>Encuentra juguetes y accesorios para tus mascotas</p>
-            <button class="btn"><li><a href="../pages/catego-pages/Juguetes.html">Leer mas</a></li></button>
+            <button class="btn">
+                <li><a href="../pages/catego-pages/Juguetes.html">Leer mas</a></li>
+            </button>
         </header>
-        </div>
+    </div>
+    <script src="../js/carrito.js"></script>
 </body>
+
 </html>
