@@ -464,6 +464,7 @@ form input:focus {
     position: fixed;
     z-index: 3;
     margin-top: 40px;
+    justify-content: flex-start;
 }
 
 .activo{
