@@ -47,6 +47,9 @@ body{
 
 .container-nav .nav-carrito{
     display: flex;
+
+    align-items: center;
+
 }
 .container-nav .menu{
     line-height: 100px;
@@ -285,14 +288,20 @@ form input:focus {
     justify-content: space-evenly;
 }
 .reloj{
+    display: flex;
+    justify-content: center;
     font-size: 250%;
     color: teal;
 }
 .trajeta-credito{
+    display: flex;
+    justify-content: center;
     font-size: 250%;
     color: teal;
 }
 .carrito{
+    display: flex;
+    justify-content: center;
     font-size: 250%;
     color: teal;
 }
@@ -300,6 +309,120 @@ form input:focus {
     display: flex;
 }
 
+/*Secciones resumidas*/
+.seccion-resumen-Categorias{
+    margin: 2% 2% 2% 7%;
+    width: 1165px;
+    height: 400px;
+    background: url(../images/Index/imagenes/carusel2.jpeg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 59, 59);
+    background-blend-mode: overlay;
+    color:white;
+    font-size: 25px;
+}
+.seccion-resumen-Categorias h2{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-seccion-resumen-Categorias{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: rgba(75, 71, 71, 0);
+}
+
+.boton-seccion-resumen-Categorias a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.seccion-resumen-Marcas{
+    margin: 2% 2% 2% 7%;
+    width: 1165px;
+    height: 400px;
+    background: url(../images/Index/imagenes/carusel3.jpeg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 59, 59);
+    background-blend-mode: overlay;
+    color:white;
+    font-size: 25px;
+}
+.seccion-resumen-Marcas h2{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-seccion-resumen-Marcas{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: rgba(75, 71, 71, 0);
+}
+
+.boton-seccion-resumen-Marcas a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.seccion-resumen-Bienestar{
+    margin: 2% 2% 2% 7%;
+    width: 1165px;
+    height: 400px;
+    background: url(../images/Index/imagenes/carusel4.jpeg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 59, 59);
+    background-blend-mode: overlay;
+    color:white;
+    font-size: 25px;
+}
+.seccion-resumen-Bienestar h2{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-seccion-resumen-Bienestar{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: rgba(75, 71, 71, 0);
+}
+
+.boton-seccion-resumen-Bienestar a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
 /*============ ESTILO CARRITO =============*/
 .carrito-ul{
     list-style: none;
