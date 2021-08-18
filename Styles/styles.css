@@ -47,7 +47,9 @@ body{
 
 .container-nav .nav-carrito{
     display: flex;
+
     align-items: center;
+
 }
 .container-nav .menu{
     line-height: 100px;
@@ -306,6 +308,7 @@ form input:focus {
 .flex{
     display: flex;
 }
+
 /*Secciones resumidas*/
 .seccion-resumen-Categorias{
     margin: 2% 2% 2% 7%;
@@ -420,7 +423,6 @@ form input:focus {
     list-style-type: none;
     color: white;
 }
-
 /*============ ESTILO CARRITO =============*/
 .carrito-ul{
     list-style: none;

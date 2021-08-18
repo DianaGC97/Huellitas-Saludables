@@ -1,10 +1,21 @@
+:root{
+    --primary: white;
+    --secundary: lime;
+    --third: #eeeeee;
+}
+
+
 *{
     padding: 0;
     margin: 0;
 }
 
+body{
+    background-color: var(--primary);
+}
+
 .menu{
-    background-color:#31b183;
+    background-color: var(--secundary);
     height: 40px;
     align-items: center;
     border: 3px;
@@ -91,4 +102,5 @@
     text-decoration: none;
     list-style-type: none;
     color: white;
+
 }
