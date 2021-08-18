@@ -9,24 +9,38 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../../styles/animals.css">
     <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
     <title>Huellitas saludables</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container-nav">
-            <div class="btn-menu">
-                <label for="btn-menu">☰</label>
+            <div class="logo-btn">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <h1><a href="../index.html">Huellitas S. 🐾</a></h1>
+                </div>
             </div>
-            <div class="logo">
-                <h1><a href="../../index.html">Huellitas S. 🐾</a></h1>
-            </div>
-            <nav class="menu">
-                <a href="../../index.html">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
 
-            </nav>
+            <div class="nav-carrito">
+                <nav class="menu no-ver">
+                    <a href="../../index.html">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Contacto</a>
+                </nav>
+    
+                <div class="compra">
+                    <ul class="carrito-ul"> 
+                        <li class="sub-menu">
+                            <span class="icon-cart" id="img-carrito"></span>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <input type="checkbox" id="btn-menu">
@@ -41,8 +55,8 @@
                     </form>
                 </section>
                 <a href="#">Novedades</a>
-                <a href="../../pages/categorias.html">Categorias</a>
-                <a href="../../pages/marcas.html">Marcas</a>
+                <a href="../../pages/categorias.html">Categorias</a> 
+                <a href="../../pages/marcas.html">Marcas</a> 
                 <a href="#">Cuidados y Bienestar</a>
                 <a href="#"> Servicios asesorios Peluqueria</a>
 
@@ -50,6 +64,32 @@
             <label for="btn-menu">✖️</label>
         </div>
     </div><br>
+
+    <div class="carrito" id="carrito">
+        <table id="lista-carrito">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th class="no-ver">Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div class="vaciar-total">
+            <div class="total">
+                <h2>Total:</h2>
+                <h3 class="suma-total"></h3>
+            </div>
+            <a href="#" id="vaciar-carrito">Vaciar</a>
+        </div>
+    </div>
+
+    
     <div class="container">
         <div class="cards">
             <!--SNACKS-->
@@ -230,6 +270,7 @@
 
 
     </div>
+    <script src="../../js/carrito.js"></script>
 </body>
 
 </html>
