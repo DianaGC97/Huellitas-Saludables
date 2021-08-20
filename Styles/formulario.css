@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+body{
+    background: #e0dcda;
+
+}
+.header{
+    background-color: #31b183 ;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 3;
+}
+.container-nav{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-nav .logo-btn{
+    display: flex;
+}
+
+.container-nav .btn-menu, .logo{
+    line-height: 70px;
+}
+.container-nav .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.container-nav .nav-carrito{
+    display: flex;
+    align-items: center;
+}
+.container-nav .menu{
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+}
+.container-nav .menu a, span{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.container-nav .menu a:hover{
+    border-bottom: 2px solid #7ace67;
+    padding-bottom: 5px;
+}
+
+/*Fin de Estilos para el encabezado*/
+
+/*Formulario*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::placeholder, textarea::focus:placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #ffffff;
+  }
+  
+  /* el marcador de posición de desplazamiento */
+  
+  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  
+  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #ffffff;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #ffffff;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #ffffff;
+  }
+  
+.Formulario{
+    font-family: 'Lato', sans-serif;
+    background: #e2dedb;
+    color: #b3aca7;
+  }
+  
+.Formulario h2 {
+    position: relative;
+    margin: 100px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+  }
+  
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+  }
+  
+.Formulario input {
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #000000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+.Formulario input:hover {
+    background: rgb(187, 179, 179);
+    color: #e2dedb;
+  }
+  
+.Formulario textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;   
+    background: transparent;
+    outline: none;  
+    color: #726659;
+    font-size: 0.875em;
+    border: solid 1px #000000; 
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+.Formulario textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+#submit {
+    width: 200px;
+    display: flex;
+    justify-content: center;   
+    padding: 0;
+    margin: 5px 0px 0px 125px;
+    font-size: 0.875em;
+    color: #b3aca7;
+    outline:none;
+    cursor: pointer;
+    border: solid 1px #000000;
+    
+  }
+  
+#submit:hover {
+    color: #e2dedb;
+  }

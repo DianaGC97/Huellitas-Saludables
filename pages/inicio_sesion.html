@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../Styles/Cuidados-y-bienestar.css">
-    <link rel="shortcut icon" href="../../images/index/imaguenes/favicon.jpeg">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="shortcut icon" href="../images/Index/imagenes/favicon.jpeg" type="images/index/imaguenes/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./images/index/imaguenes/favicon.jpeg">
     <link rel="stylesheet" href="../fonts/fonts.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>Categorias</title>
+    <link rel="stylesheet" href="../Styles/formulario.css">
+    <title>Inicio de sesion</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container-nav">
@@ -25,22 +29,23 @@
 
             <div class="nav-carrito">
                 <nav class="menu no-ver">
-                    <a href="../inicio_sesion.html">Inicio de secion</a>
-                    <a href="../registro.html">registrarse</a>
+                    <a href="./formulario.html">Inicio de secion</a>
+                    <a href="./registro.html">registrarse</a>
                     <a href="#">Contacto</a>
                 </nav>
-    
+
                 <div class="compra">
-                    <ul class="carrito-ul"> 
+                    <ul class="carrito-ul">
                         <li class="sub-menu">
                             <span class="icon-cart" id="img-carrito"></span>
-                            
+
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+
     <input type="checkbox" id="btn-menu">
     <div class="container-menu">
         <div class="cont-menu">
@@ -52,8 +57,8 @@
                         </div>
                     </form>
                 </section>
-                <a href="../pages/categorias.html">Categorias</a> 
-                <a href="../pages/marcas.html">Marcas</a> 
+                <a href="../pages/categorias.html">Categorias</a>
+                <a href="../pages/marcas.html">Marcas</a>
                 <a href="../pages/cuidados.bienestar.html">Cuidados y Bienestar</a>
 
             </nav>
@@ -75,7 +80,7 @@
             </thead>
             <tbody></tbody>
         </table>
-        
+
         <div class="vaciar-total">
             <div class="total">
                 <h2>Total:</h2>
@@ -86,28 +91,19 @@
     </div>
 
     <br>
-    <br>
+    </br>
 
+    <div class="Formulario">
+        <h2>Inicio de sesion</h2>
+        <form id="form" class="topBefore">
 
-    <div class="container">
-        <div class="peluqueria">
-            <h2>Servicios y accesorios <br> de peluqueria</h2>
-            <br>
-            <button class="btn"><li><a href="../pages/cuidados/peluqueria.html">Leer mas</a></li></button>
-        </div>
+            <input id="name" type="text" placeholder="NOMBRE">
+            <input id="email" type="text" placeholder="E-MAIL">
+            <textarea id="message" type="text" placeholder="MENSAJE"></textarea>
+            <input id="submit" type="submit" value="Iniciar">
 
-        <div class="farmacia">
-            <h2>Farmacia</h2>
-            <br>
-            <br>
-            <button class="btn"><li><a href="../pages/cuidados/farmacia.html">Leer mas</a></li></button>
-        </div>
-
-        <div class="cuidados">
-            <h2>Cuidados básicos <br> para tus mascotas</h2>
-            <br>
-            <button class="btn"><li><a href="../pages/cuidados/cuidados.html">Leer mas</a></li></button>
-        </div>
+        </form>
     </div>
-</body>
+    <script src="../js/carrito.js"></script>
+
 </html>
