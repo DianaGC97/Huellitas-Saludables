@@ -1,6 +1,6 @@
 :root{
     --primary: white;
-    --secundary: lime;
+    --secundary: #31b183;
     --third: #eeeeee;
 }
 
@@ -50,3 +50,5 @@ body{
     border-radius: 5px;
     color: var(--primary);
 }
+
+   
