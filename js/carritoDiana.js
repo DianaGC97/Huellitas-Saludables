@@ -76,7 +76,7 @@ function leerCard(producto){
         imagen: producto.querySelector('img').src,
         titulo: producto.querySelector('p').textContent,
         precio: producto.querySelector('h3').textContent,
-        id: producto.querySelector('a').getAttribute('data-id'),
+        id: producto.querySelector('button').getAttribute('data-id'),
         cantidad: 1,
         precioTotal: 0
     }
