@@ -1,6 +1,6 @@
 :root{
     --primary: white;
-    --secundary: lime;
+    --secundary: #31b183;
     --third: #eeeeee;
 }
 
@@ -68,7 +68,7 @@
     margin: 2% 2% 2% 2%;
     width: 1165px;
     height: 400px;
-    background: url(../image/accesorios.jpg) no-repeat center center/cover;
+    background: url(../images/catego-images/accesorios.jpg) no-repeat center center/cover;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;

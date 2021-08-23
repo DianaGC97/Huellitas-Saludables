@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --primary: white;
     --secundary: #31B189;
@@ -5,17 +6,15 @@
 }
 
 
+=======
+>>>>>>> b29ca7b7674860fbdced0866add33d2a1efceb43
 *{
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color: var(--primary);
-}
-
 .menu{
-    background-color: var(--secundary);
+    background-color:#31b183;
     height: 40px;
     align-items: center;
     border: 3px;
@@ -102,5 +101,4 @@ body{
     text-decoration: none;
     list-style-type: none;
     color: white;
-
 }
