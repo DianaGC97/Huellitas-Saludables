@@ -1,0 +1,54 @@
+:root{
+    --primary: white;
+    --secundary: #31b183;
+    --third: #eeeeee;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--primary);
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin:4% 4% 4% 4%;
+    align-items: center;
+}
+
+.cards{
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    background-color: var(--third);
+    background-attachment: fixed;
+    border-radius: 5px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cards:hover{
+    background-color: #d3cdcd;
+    color: black;
+    transform: translateY(-3%);
+}
+
+
+.boton{
+    width:50%;
+    font-family: cursive;
+    font-size: 16px;
+    background-color: var(--secundary);
+    border-radius: 5px;
+    color: var(--primary);
+}
+
+   
